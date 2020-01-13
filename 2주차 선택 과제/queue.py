@@ -18,6 +18,7 @@ class queue:
       return False
     output = self.arr[self.front]
     self.front += 1
+    del (self.arr[self.front - 1])
     return output
 
   def peek(self):
